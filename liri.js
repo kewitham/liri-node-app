@@ -60,7 +60,7 @@ request('http://www.omdbapi.com/?t=' + argfour + '&y=&plot=short&r=json&tomatoes
 	if (!error && response.statusCode == 200) {
 
 		// Parse the body of the site
-		console.log(JSON.parse(body).title + JSON.parse(body).year + JSON.parse(body).imdb.rating)
+		console.log(JSON.parse(body).title + JSON.parse(body).year + JSON.parse(body).imdb.rating + JSON.parse(body).country + JSON.parse(body).plot)
 	}
 });
 
